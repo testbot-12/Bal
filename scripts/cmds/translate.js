@@ -43,7 +43,7 @@ module.exports = {
 
 		},
 		en: {
-			translateTo: "\n╔══════════════╗\n𝗧𝗿𝗮𝗻𝘀𝗹𝗮𝘁𝗲 𝗳𝗿𝗼𝗺 『%1』 𝘁𝗼 『%2』\n╚══════════════╝\n",
+			translateTo: "𝗧𝗿𝗮𝗻𝘀𝗹𝗮𝘁𝗲 𝗳𝗿𝗼𝗺 『%1』 𝘁𝗼 『%2』",
 			invalidArgument: "❌ Invalid argument, please choose on or off",
 			turnOnTransWhenReaction: `✅ Turn on translate message when reaction, try to react \"${defaultEmojiTranslate}\" to any message to translate it (not support bot message)\n Only translate message after turn on this feature`,
 			turnOffTransWhenReaction: "✅ Turn off translate message when reaction",
