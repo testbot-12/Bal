@@ -23,12 +23,12 @@ module.exports = {
   },
   onStart: async function ({ api, event }) {
       try {
-        const loadingMessage = "𝙒𝘼𝙄𝙏 𝙈𝘼𝙎𝙏𝙀𝙍🔹🔸🔹🔸";
+        const loadingMessage = "𝗪𝗔𝗜𝗧....🧃 ";
         await api.sendMessage(loadingMessage, event.threadID);
 
         const ownerInfo = {
           name: '🔖𝙎𝙄𝘿𝙄𝘽𝙀 oumar El 𝙋𝙃𝘼𝙍𝙊𝙐𝙆🏷',
-          gender: 'Boy',
+          gender: '𝗕𝗢𝗬',
           hobby: '𝙋𝙇𝘼𝙔 🏀𝘽𝘼𝙎𝙆𝙀𝙏𝘽𝘼𝙇𝙇🏀 with my best friends🇺🇸 ',
           relationship: '𝙈𝘼𝙍𝙍𝙄𝙀𝘿 with 𝙈𝙔 𝘽𝘼𝘽𝙔 𝙋𝙍É𝙎𝘾𝙄𝙇𝙄𝘼 i love this girl 🥺',
           facebookLink: 'https://www.facebook.com/more.sidibe.1?mibextid=JRoKGi/pharouk ',
@@ -60,18 +60,18 @@ module.exports = {
         fs.writeFileSync(videoPath, Buffer.from(videoResponse.data, 'binary'));
 
         const response = `
-          𝗼𝘄𝗻𝗲𝗿 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻📑:
-⊰🔖_________
+          𝗼𝘄𝗻𝗲𝗿 𝗶𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗼𝗻🔬:
+❍⌇─➭ 
 (◍•ᴗ•◍)𝗡𝗔𝗠𝗘 : ${ownerInfo.name}
-⊰🔖__________
+❍⌇─➭ 
 ♀𝗚𝗘𝗡𝗥𝗘♂: ${ownerInfo.gender}
-⊰🔖__________
+❍⌇─➭ 
 🏓𝗛𝗢𝗕𝗕𝗬⛹‍♂: ${ownerInfo.hobby}
-⊰🔖__________
+❍⌇─➭ 
 𝗥𝗘𝗟𝗔𝗧𝗢𝗡𝗦𝗛𝗜💞: ${ownerInfo.relationship}
-⊰🔖__________
-➤🔖 𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞🔗: ${ownerInfo.facebookLink}
-⊰🔖__________
+❍⌇─➭ 
+ 𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞🔗: ${ownerInfo.facebookLink}
+❍⌇─➭ 
       ◈ 𝗦𝗧𝗔𝗧𝗨𝗦 ◈: ${ownerInfo.bio} 🇨🇮
         `;
 
