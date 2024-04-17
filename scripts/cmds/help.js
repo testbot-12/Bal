@@ -34,7 +34,7 @@ module.exports = {
       const categories = {};
       let msg = "";
 
-      msg += `┏━━━ ━━━┓\n   🧛𝘿𝙍𝘼𝘾𝙐𝙇𝘼🧛 \n┗━━━ ━━━┛`; // replace with your name 
+      msg += `  🧛𝘿𝙍𝘼𝘾𝙐𝙇𝘼🧛 `; // replace with your name 
 
       for (const [name, value] of commands) {
         if (value.config.role > 1 && role < value.config.role) continue;
@@ -46,13 +46,13 @@ module.exports = {
 
       Object.keys(categories).forEach((category) => {
         if (category !== "info") {
-          msg += `\n❍⌇─➭ \n│ ✧  ${category.toUpperCase()}  ✧`;
+          msg += `\n❍⌇─➭ \n▐ ✧  ${category.toUpperCase()}  ✧`;
 
 
           const names = categories[category].commands.sort();
           for (let i = 0; i < names.length; i += 3) {
             const cmds = names.slice(i, i + 3).map((item) => `🔹${item}`);
-            msg += `\n│ ${cmds.join(" ".repeat(Math.max(1, 10 - cmds.join("").length)))}`;
+            msg += `\n▐ ${cmds.join(" ".repeat(Math.max(1, 10 - cmds.join("").length)))}`;
           }
 
           msg += `\n❍⌇─➭ `;
@@ -62,7 +62,7 @@ module.exports = {
       const totalCommands = commands.size;
       msg += `\n𝗖𝘂𝗿𝗿𝗲𝗻𝘁𝗹𝘆, 𝘁𝗵𝗲 𝗯𝗼𝘁 𝗵𝗮𝘀 ${totalCommands} 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝘁𝗵𝗮𝘁 𝗰𝗮𝗻 𝗯𝗲 𝘂𝘀𝗲𝗱\n`;
       msg += `𝗧𝘆𝗽𝗲 ${prefix} 𝗵𝗲𝗹𝗽 𝗰𝗺𝗱𝗡𝗮𝗺𝗲 𝘁𝗼 𝘃𝗶𝗲𝘄 𝘁𝗵𝗲 𝗱𝗲𝘁𝗮𝗶𝗹𝘀 𝗼𝗳 𝘁𝗵𝗮𝘁 𝗰𝗼𝗺𝗺𝗮𝗻𝗱\n`;
-      msg += `🔬 | 🧛𝗗𝗥𝗔𝗖𝗨𝗟𝗔🔬`; // its not decoy so change it if you want 
+      msg += `🔬 | 🧛𝗗𝗥𝗔𝗖𝗨𝗟𝗔🧛`; // its not decoy so change it if you want 
 
       const helpListImages = [
         "https://i.imgur.com/KhnL8U8.jpeg", // add image link here
@@ -95,7 +95,7 @@ module.exports = {
         const guideBody = configCommand.guide?.en || "No guide available.";
         const usage = guideBody.replace(/{p}/g, prefix).replace(/{n}/g, configCommand.name);
 
-        const response = `╔══•●•══╗🧛𝘿𝙍𝘼𝘾𝙐𝙇𝘼🧛╚══•●•══╝
+        const response = `🧛𝘿𝙍𝘼𝘾𝙐𝙇𝘼🧛
   ❍⌇─➭  ${configCommand.name}
   ❍⌇─➭  𝙄𝙉𝙁𝙊
   ❍⌇─➭  𝘿𝙚𝙨𝙘𝙧𝙞𝙥𝙩𝙞𝙤𝙣: ${longDescription}
